@@ -6,6 +6,8 @@ TagManager:
   tags:
   - CinemachineTarget
   - Core
+  - Worker
+  - Building
   layers:
   - Default
   - TransparentFX
