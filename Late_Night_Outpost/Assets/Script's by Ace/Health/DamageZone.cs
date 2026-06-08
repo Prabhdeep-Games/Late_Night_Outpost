@@ -24,7 +24,7 @@ using UnityEngine.Events;
 namespace Ludocore
 {
     /// <summary>Damages IDamageables that an attached Sensor reports as detected.</summary>
-    public class DamageZone : MonoBehaviour
+    public class DamageArea: MonoBehaviour
     {
         //==================== CONFIG =====================
         [Header("Config")]

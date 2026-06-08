@@ -2,18 +2,15 @@ using UnityEngine;
 
 namespace Ludocore
 {
-    /// <summary>
-    /// Simple trigger that applies damage to any IDamageable entering or staying inside.
-    /// Great for testing HealthSystem and lose conditions.
-    /// </summary>
     [RequireComponent(typeof(Collider))]
     public class DamageZone : MonoBehaviour
     {
         [Header("Config")]
-        [Tooltip("Damage applied each hit.")]
         [SerializeField] private float damageAmount = 10f;
 
-        [Tooltip("If true, damage is applied every time the object stays inside this zone (per physics step).")]
+        [Tooltip("Layers that can be damaged by this zone.")]
+        [SerializeField] private LayerMask damageLayers;
+
         [SerializeField] private bool damageOnStay = false;
 
         private void Reset()
@@ -37,7 +34,10 @@ namespace Ludocore
         {
             if (damageAmount <= 0f) return;
 
-            // Look up the hierarchy so it works when the collider is on a child
+            // 1) Layer filter – skip anything not in damageLayers
+            if ((damageLayers.value & (1 << other.gameObject.layer)) == 0) return;
+
+            // 2) Find IDamageable on this object or its parents
             if (other.GetComponentInParent<IDamageable>() is { } damageable)
             {
                 damageable.TakeDamage(damageAmount);
