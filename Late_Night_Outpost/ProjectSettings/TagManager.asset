@@ -8,6 +8,7 @@ TagManager:
   - Core
   - Worker
   - Building
+  - Enemy
   layers:
   - Default
   - TransparentFX
