@@ -47,7 +47,7 @@ namespace Ludocore
         {
             if (!targeting.HasTarget)
             {
-                //motor.Stop();
+                motor.Stop();
                 currentBehavior = "Idle";
                 return;
             }
@@ -55,7 +55,6 @@ namespace Ludocore
             if (targeting.Distance > attackRange)
             {
                 motor.MoveTo(targeting.Target.position);
-                Debug.Log(targeting.Target.name);
                 currentBehavior = "Seek";
             }
             else

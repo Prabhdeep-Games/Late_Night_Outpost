@@ -9,10 +9,9 @@
 namespace Ludocore
 {
     /// <summary>Anything that can take damage and be healed.</summary>
-public interface IDamageable
-{
-    void TakeDamage(float amount);
-    bool IsAlive { get; }
-
-}
+    public interface IDamageable
+    {
+        void TakeDamage(float amount);
+        void Heal(float amount);
+    }
 }

@@ -35,7 +35,6 @@ namespace Ludocore
         public float MaxHealth     => data.MaxHealth;
         public float HealthRatio   => currentHealth / data.MaxHealth;
         public bool  IsDead        => isDead;
-        public bool  IsAlive       => !isDead;
 
         //==================== OUTPUTS =====================
         public event Action<float> OnDamaged;

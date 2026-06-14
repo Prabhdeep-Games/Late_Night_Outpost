@@ -36,6 +36,14 @@ namespace Ludocore
         [Tooltip("Invoked when the count reaches the target")]
         [SerializeField] private UnityEvent targetReachedEvent;
 
+        [Tooltip("Optional broadcast event raised each time the count changes. " +
+                 "Listeners read Count from this Counter (GameEvent carries no payload).")]
+        [SerializeField] private GameEvent changedGameEvent;
+
+        [Tooltip("Optional broadcast event raised when the count reaches the target. " +
+                 "Any GameEventListener in the scene can react.")]
+        [SerializeField] private GameEvent targetReachedGameEvent;
+
         //==================== INPUTS =====================
         /// <summary>Add one to the count. Fires OnTargetReached when target is hit.</summary>
         [ContextMenu("Increment")]
@@ -44,11 +52,13 @@ namespace Ludocore
             count++;
             OnChanged?.Invoke(count);
             changedEvent?.Invoke(count);
+            if (changedGameEvent) changedGameEvent.Raise();
 
             if (count < targetCount) return;
 
             OnTargetReached?.Invoke();
             targetReachedEvent?.Invoke();
+            if (targetReachedGameEvent) targetReachedGameEvent.Raise();
 
             if (autoReset) count = 0;
         }
@@ -60,6 +70,7 @@ namespace Ludocore
             count = 0;
             OnChanged?.Invoke(count);
             changedEvent?.Invoke(count);
+            if (changedGameEvent) changedGameEvent.Raise();
         }
     }
 }

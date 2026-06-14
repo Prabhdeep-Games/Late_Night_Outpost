@@ -13,6 +13,7 @@
 // Once filled, the slot stops responding until something resets it externally.
 // ============================================================================
 
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -31,6 +32,10 @@ namespace Ludocore
         [Tooltip("Where the prop snaps when accepted. Leave empty to snap onto " +
                  "this slot's own transform.")]
         [SerializeField] private Transform snapPose;
+
+        [Header("Snap Animation")]
+        [Tooltip("Seconds the prop takes to lerp into the snap pose. 0 = instant.")]
+        [SerializeField, Min(0f)] private float snapDuration = 0.15f;
 
         //==================== STATE =====================
         [Header("Debug")]
@@ -67,16 +72,42 @@ namespace Ludocore
             // stops fighting our snap.
             grabbable.ForceRelease();
 
-            Transform target = snapPose ? snapPose : transform;
             rb.linearVelocity = Vector3.zero;
             rb.angularVelocity = Vector3.zero;
-            rb.position = target.position;
-            rb.rotation = target.rotation;
             // Kinematic = locked in place, and Grabbable.CanInteract goes false
-            // so the player can't pick it back up.
+            // so the player can't pick it back up. The coroutine then drives
+            // rb.position/rotation directly, which is the right path for a
+            // kinematic body.
             rb.isKinematic = true;
 
             isFilled = true;
+            StartCoroutine(SnapRoutine(rb));
+        }
+
+        private IEnumerator SnapRoutine(Rigidbody rb)
+        {
+            Transform target = snapPose ? snapPose : transform;
+            Vector3 startPos = rb.position;
+            Quaternion startRot = rb.rotation;
+            Vector3 endPos = target.position;
+            Quaternion endRot = target.rotation;
+
+            if (snapDuration > 0f)
+            {
+                float t = 0f;
+                while (t < 1f)
+                {
+                    t += Time.deltaTime / snapDuration;
+                    float k = Mathf.SmoothStep(0f, 1f, Mathf.Clamp01(t));
+                    rb.position = Vector3.Lerp(startPos, endPos, k);
+                    rb.rotation = Quaternion.Slerp(startRot, endRot, k);
+                    yield return null;
+                }
+            }
+
+            rb.position = endPos;
+            rb.rotation = endRot;
+
             onCorrectPlaced?.Invoke();
             if (correctPlacedEvent) correctPlacedEvent.Raise();
         }

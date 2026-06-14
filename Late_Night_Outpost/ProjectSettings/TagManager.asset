@@ -9,14 +9,15 @@ TagManager:
   - Worker
   - Building
   - Enemy
+  - Ceiling
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
-  - 
+  - Wall
   - 
   - 
   - 

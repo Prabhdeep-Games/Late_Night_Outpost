@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 32
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -13,3 +13,9 @@ MonoBehaviour:
   m_Name: NewFloatVariable
   m_EditorClassIdentifier: Assembly-CSharp::Ludocore.FloatVariable
   initialValue: 0
+  isClamped: 0
+  min: 0
+  max: 1
+  resetOnPlay: 1
+  debugLog: 0
+  runtimeValue: 0
