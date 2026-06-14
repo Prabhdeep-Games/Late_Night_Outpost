@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: NewBuildingDataSimple
   m_EditorClassIdentifier: Assembly-CSharp::Ludocore.BuildingData_Simple
   buildingName: Church
-  prefab: {fileID: 0}
+  prefab: {fileID: 1240315855748278043, guid: b0c727eacbe381a459848f517fd29d00, type: 3}

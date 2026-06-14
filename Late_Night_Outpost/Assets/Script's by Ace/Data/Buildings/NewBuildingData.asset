@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: NewBuildingData
   m_EditorClassIdentifier: Assembly-CSharp::Ludocore.BuildingData
   buildingName: Church
-  prefab: {fileID: 0}
-  costs: []
+  prefab: {fileID: 1240315855748278043, guid: b0c727eacbe381a459848f517fd29d00, type: 3}
+  costs:
+  - data: {fileID: 11400000, guid: d94fa5a2581f0574ebab7af0fb64d9e6, type: 2}
+    amount: 1
   nextLevel: {fileID: 0}
