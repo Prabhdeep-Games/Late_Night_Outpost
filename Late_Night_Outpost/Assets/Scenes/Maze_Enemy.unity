@@ -5081,8 +5081,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ludocore.NavMeshWander
   radius: 10
-  pauseTime: 0.5
-  autoPlay: 1
+  pauseTime: 1
+  autoPlay: 0
   isWandering: 0
   wanderStartedEvent:
     m_PersistentCalls:
@@ -5107,7 +5107,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Ludocore.NavMeshChase
   target: {fileID: 1893329884}
   updateRate: 0.2
-  autoPlay: 1
+  autoPlay: 0
   isChasing: 0
   chaseStartedEvent:
     m_PersistentCalls:
@@ -9017,7 +9017,7 @@ Transform:
   m_GameObject: {fileID: 1841241908}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.28, z: 0.11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9068,9 +9068,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  range: 5
+  range: 5.83
   fov: 155
-  eyeHeight: 0.69
+  eyeHeight: 0
   detectionLayers:
     serializedVersion: 2
     m_Bits: 8
@@ -9093,8 +9093,8 @@ MonoBehaviour:
   fillRate: 0.1
   drainRate: 0.2
   drainDelay: 1
-  lowThreshold: 0.1
-  highThreshold: 0.3
+  lowThreshold: 0.05
+  highThreshold: 0.1
   initialValue: 0
   autoFill: 0
   value: 0

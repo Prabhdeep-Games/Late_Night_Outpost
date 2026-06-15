@@ -16,7 +16,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
-namespace Ludocore.Editor.ArchitectureVisualizer
+namespace Ludocore.ArchitectureVisualizer
 {
     public class ArchitectureVisualizerWindow : EditorWindow
     {

@@ -5,7 +5,7 @@
 
 using UnityEngine;
 
-namespace Ludocore.Editor.ArchitectureVisualizer
+namespace Ludocore.ArchitectureVisualizer
 {
     public class ScriptableObjectNode : ArchitectureNode
     {

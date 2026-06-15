@@ -27,7 +27,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using Object = UnityEngine.Object;
 
-namespace Ludocore.Editor.ArchitectureVisualizer
+namespace Ludocore.ArchitectureVisualizer
 {
     public enum NodeKind { GameObject, Component, ScriptableObject }
 

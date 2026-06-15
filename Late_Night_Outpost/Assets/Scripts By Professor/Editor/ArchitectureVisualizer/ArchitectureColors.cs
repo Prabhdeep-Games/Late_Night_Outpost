@@ -9,7 +9,7 @@
 
 using UnityEngine;
 
-namespace Ludocore.Editor.ArchitectureVisualizer
+namespace Ludocore.ArchitectureVisualizer
 {
     internal static class ArchitectureColors
     {

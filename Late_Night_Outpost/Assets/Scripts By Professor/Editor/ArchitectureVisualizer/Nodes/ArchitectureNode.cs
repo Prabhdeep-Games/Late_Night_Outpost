@@ -15,8 +15,12 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using Object = UnityEngine.Object;
 
-namespace Ludocore.Editor.ArchitectureVisualizer
+namespace Ludocore.ArchitectureVisualizer
 {
+    // Alias inside the namespace so it outranks Ludocore.Edge (the maze-layout
+    // struct in BackroomsLayout), which would otherwise shadow GraphView's Edge.
+    using Edge = UnityEditor.Experimental.GraphView.Edge;
+
     public abstract class ArchitectureNode : Node
     {
         public GraphNode Data { get; }
