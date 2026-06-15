@@ -14749,7 +14749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1f7828f177e8b04ab50c3cd7509a4ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ludocore.DamageArea
-  source: {fileID: 0}
+  source: {fileID: -6395482281937817867}
   damage: 10
   hitOncePerTarget: 1
   hitCount: 0
