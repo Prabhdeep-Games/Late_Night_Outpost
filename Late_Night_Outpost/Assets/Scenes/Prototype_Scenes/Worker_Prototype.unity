@@ -237,7 +237,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 367259429884808101, guid: d0154080a97005c41a22c4e86f4ca3d1, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3458431371270922674, guid: d0154080a97005c41a22c4e86f4ca3d1, type: 3}
       propertyPath: raycastSensor
@@ -373,7 +373,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2796608883821941216, guid: fc58326b6d28bcf45af325e73ac05bf9, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -925,7 +925,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8331315712727554422, guid: 84f3e1c638376f84595809ac34c19411, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1227,7 +1227,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2796608883821941216, guid: fc58326b6d28bcf45af325e73ac05bf9, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7286380137569490675, guid: fc58326b6d28bcf45af325e73ac05bf9, type: 3}
       propertyPath: m_Follow
@@ -1296,7 +1296,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8331315712727554422, guid: 84f3e1c638376f84595809ac34c19411, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8503337999393079620, guid: 84f3e1c638376f84595809ac34c19411, type: 3}
+      propertyPath: far clip plane
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8503337999393079620, guid: 84f3e1c638376f84595809ac34c19411, type: 3}
+      propertyPath: near clip plane
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1574,7 +1582,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 367259429884808101, guid: d0154080a97005c41a22c4e86f4ca3d1, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3458431371270922674, guid: d0154080a97005c41a22c4e86f4ca3d1, type: 3}
       propertyPath: raycastSensor
@@ -1753,6 +1761,6 @@ SceneRoots:
   - {fileID: 5686879218002906484}
   - {fileID: 685789814}
   - {fileID: 1932078020}
-  - {fileID: 1679209271}
   - {fileID: 622995452}
+  - {fileID: 1679209271}
   - {fileID: 481256287}
