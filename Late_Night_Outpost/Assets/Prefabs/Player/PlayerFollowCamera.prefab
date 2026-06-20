@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1745507215058496058
+--- !u!1 &878851960148438344
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,51 +8,51 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2931767379658270957}
-  - component: {fileID: 6790395965098808416}
-  - component: {fileID: 7122479037424300228}
-  - component: {fileID: 972389065837055407}
-  m_Layer: 0
+  - component: {fileID: 8106965395818412305}
+  - component: {fileID: 3347973263177428122}
+  - component: {fileID: 3503314582315391614}
+  - component: {fileID: 193192507497308604}
+  m_Layer: 3
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2931767379658270957
+--- !u!4 &8106965395818412305
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1745507215058496058}
+  m_GameObject: {fileID: 878851960148438344}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 8818693721104575167}
+  m_Father: {fileID: 937656222229524230}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6790395965098808416
+--- !u!114 &3347973263177428122
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1745507215058496058}
+  m_GameObject: {fileID: 878851960148438344}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7122479037424300228
+--- !u!114 &3503314582315391614
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1745507215058496058}
+  m_GameObject: {fileID: 878851960148438344}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
@@ -63,23 +63,23 @@ MonoBehaviour:
   AmplitudeGain: 0.5
   FrequencyGain: 0.3
   m_NoiseOffsets: {x: -451.37964, y: 684.7062, z: 648.0488}
---- !u!114 &972389065837055407
+--- !u!114 &193192507497308604
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1745507215058496058}
+  m_GameObject: {fileID: 878851960148438344}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bd6043bde05a7fc4cba197d06915c1e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Damping: {x: 0.1, y: 0.25, z: 0.3}
-  ShoulderOffset: {x: 1, y: 0, z: 0}
+  ShoulderOffset: {x: 0.38, y: 0.28, z: 2.26}
   VerticalArmLength: 0
-  CameraSide: 0.6
-  CameraDistance: 4
+  CameraSide: 0.526
+  CameraDistance: 2.24
   CameraCollisionFilter:
     serializedVersion: 2
     m_Bits: 1
@@ -87,7 +87,7 @@ MonoBehaviour:
   CameraRadius: 0.15
   DampingIntoCollision: 0
   DampingFromCollision: 0
---- !u!1 &7660126114383135443
+--- !u!1 &2796608883821941216
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -95,38 +95,39 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8818693721104575167}
-  - component: {fileID: 6796662851611823961}
-  m_Layer: 0
-  m_Name: Camera
-  m_TagString: Untagged
+  - component: {fileID: 937656222229524230}
+  - component: {fileID: 7286380137569490675}
+  - component: {fileID: 4762421048637085485}
+  m_Layer: 3
+  m_Name: PlayerFollowCamera
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8818693721104575167
+  m_IsActive: 0
+--- !u!4 &937656222229524230
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7660126114383135443}
+  m_GameObject: {fileID: 2796608883821941216}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 41.230003, y: 3.845, z: 160.7}
+  m_LocalPosition: {x: 42.969765, y: 6.1800003, z: 158.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2931767379658270957}
+  - {fileID: 8106965395818412305}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6796662851611823961
+  m_LocalEulerAnglesHint: {x: 0.049, y: 0.798, z: -0.033}
+--- !u!114 &7286380137569490675
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7660126114383135443}
+  m_GameObject: {fileID: 2796608883821941216}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
@@ -172,4 +173,30 @@ MonoBehaviour:
     m_OnCameraLive:
       m_PersistentCalls:
         m_Calls: []
-  m_ComponentOwner: {fileID: 2931767379658270957}
+  m_ComponentOwner: {fileID: 8106965395818412305}
+--- !u!114 &4762421048637085485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2796608883821941216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7f59b57e920c8d4d8b71599246ffc17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Ludocore.RaycastSensor
+  requiredTags: []
+  signals: []
+  detectedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  lostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  distance: 8.73
+  castRadius: 1
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  currentTarget: {fileID: 0}
