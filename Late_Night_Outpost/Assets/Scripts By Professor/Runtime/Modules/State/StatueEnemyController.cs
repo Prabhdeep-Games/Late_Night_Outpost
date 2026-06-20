@@ -27,7 +27,7 @@ using UnityEngine.Events;
 
 namespace Ludocore
 {
-    public enum StatuePhase { Idle, Triggered, Chasing, Attacking, LookAround, BackToBase }
+    public enum StatuePhase { Idle, Triggered, Chasing, Attacking, LookAround, BackToBase, Death }
 
     /// <summary>Living-statue enemy. Awareness drives the phase; composes a SightSensor + Meter + chase/wander modules + an attack Spawner.</summary>
     public class StatueEnemyController : MonoBehaviour
@@ -86,7 +86,8 @@ namespace Ludocore
         [SerializeField] private UnityEvent lookAroundEvent;
         [Tooltip("Entered BackToBase — awareness spent, walking home.")]
         [SerializeField] private UnityEvent backToBaseEvent;
-
+        [Tooltip("Entered Death — play death animation, disable the enemy.")]
+        [SerializeField] private UnityEvent DeathEvent;
         //==================== LIFECYCLE =====================
         private void Awake()
         {
@@ -132,6 +133,10 @@ namespace Ludocore
 
                 case StatuePhase.BackToBase:
                     if (entered) { Enter(backToBaseEvent); motor.MoveTo(_homePosition); }
+                    break;
+
+                case StatuePhase.Death:
+                    if (entered) { Enter(DeathEvent); StopMovement(); }
                     break;
             }
         }
