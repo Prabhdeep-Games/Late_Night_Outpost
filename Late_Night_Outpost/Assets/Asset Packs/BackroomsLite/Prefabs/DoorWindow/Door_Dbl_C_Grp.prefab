@@ -348,6 +348,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9029359467289306013}
+  - component: {fileID: -1147505296042258038}
+  - component: {fileID: -4708247613493457515}
+  - component: {fileID: 8721388660025036415}
   m_Layer: 0
   m_Name: Door_Dbl_C_Grp
   m_TagString: Untagged
@@ -374,6 +377,71 @@ Transform:
   - {fileID: 1069285080964178982}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-1147505296042258038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7371717953209777503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c56a4a68088f9b4499e9b3ddf85cfbd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LockableDoor
+  keyPickup: {fileID: 0}
+  useRadius: 2
+--- !u!114 &-4708247613493457515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7371717953209777503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3db9e3879416a4280b173ad1404849, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Ludocore.Focusable
+  isFocused: 0
+  focusedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  unfocusedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  focusedGameEvent: {fileID: 0}
+  unfocusedGameEvent: {fileID: 0}
+--- !u!114 &8721388660025036415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7371717953209777503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d8488265279bba48ad56cf57585cff4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Ludocore.Activatable
+  oneShot: 0
+  onActivate:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11500000, guid: c56a4a68088f9b4499e9b3ddf85cfbd2, type: 3}
+        m_TargetAssemblyTypeName: UnityEditor.MonoScript, UnityEditor.CoreModule
+        m_MethodName: set_name
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: TryOpenWithKey()
+          m_BoolArgument: 0
+        m_CallState: 2
+  activatedGameEvent: {fileID: 0}
+  consumed: 0
 --- !u!1 &9109523790503175289
 GameObject:
   m_ObjectHideFlags: 0
