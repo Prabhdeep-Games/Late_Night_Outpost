@@ -3,12 +3,9 @@ using UnityEngine.UI;
 
 public class KeyPickupEffects : MonoBehaviour
 {
-    [Header("Doors to remove")]
-    [SerializeField] private GameObject[] doors;
-
     [Header("UI")]
     [SerializeField] private Image keyIcon;
-    [SerializeField] private Text keyText; // optional, for "Key" label
+    [SerializeField] private Text keyText;
 
     [Header("Key object")]
     [SerializeField] private GameObject keyObject;
@@ -18,45 +15,39 @@ public class KeyPickupEffects : MonoBehaviour
 
     private bool collected;
 
-    // Option A: called from Activatable.onActivate (if you ever use interact)
-    public void OnKeyUsed()
+    public bool HasKey => collected;
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (collected) return;
+        if (!string.IsNullOrEmpty(playerTag) && !other.CompareTag(playerTag))
+            return;
+
+        CollectKey();
+    }
+
+    private void CollectKey()
     {
         if (collected) return;
         collected = true;
 
-        RemoveDoors();
         ShowKeyUI();
         HideKeyObject();
     }
 
-    // Option B: trigger-based pickup (walk into the key)
-    private void OnTriggerEnter(Collider other)
-{
-    Debug.Log($"Key trigger hit by: {other.name}");
-
-    if (collected) return;
-    if (!string.IsNullOrEmpty(playerTag) && !other.CompareTag(playerTag))
-        return;
-
-    OnKeyUsed();
-}
-
-    private void RemoveDoors()
-{
-    for (int i = 0; i < doors.Length; i++)
-    {
-        if (doors[i])
-        {
-            // Instead of Destroy(doors[i]);
-            doors[i].SetActive(false);
-        }
-    }
-}
-
     private void ShowKeyUI()
     {
-        if (keyIcon) keyIcon.enabled = true;
-        if (keyText) keyText.text = "Key"; // or "Key collected"
+        if (keyIcon)
+        {
+            keyIcon.gameObject.SetActive(true);
+            keyIcon.enabled = true;
+        }
+
+        if (keyText)
+        {
+            keyText.gameObject.SetActive(true);
+            keyText.text = "Key"; // or "Press E near a door"
+        }
     }
 
     private void HideKeyObject()
@@ -67,5 +58,11 @@ public class KeyPickupEffects : MonoBehaviour
         }
     }
 
-    
+    public void ConsumeKey()
+    {
+        collected = false;
+
+        if (keyIcon) keyIcon.gameObject.SetActive(false);
+        if (keyText) keyText.gameObject.SetActive(false);
+    }
 }
