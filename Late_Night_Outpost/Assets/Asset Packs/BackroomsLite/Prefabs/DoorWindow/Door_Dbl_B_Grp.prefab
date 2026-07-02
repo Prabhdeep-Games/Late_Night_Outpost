@@ -20,7 +20,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8674750473419594388
 Transform:
   m_ObjectHideFlags: 0
@@ -74,6 +74,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LockableDoor
   keyPickup: {fileID: 0}
+  playerTag: Player
 --- !u!114 &2071720984759190396
 MonoBehaviour:
   m_ObjectHideFlags: 0

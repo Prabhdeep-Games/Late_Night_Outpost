@@ -413,7 +413,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LockableDoor
   keyPickup: {fileID: 0}
-  useRangeTrigger: {fileID: 2904127720663849913}
   playerTag: Player
 --- !u!114 &-4708247613493457515
 MonoBehaviour:

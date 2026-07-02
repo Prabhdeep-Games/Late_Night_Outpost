@@ -165,6 +165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LockableDoor
   keyPickup: {fileID: 0}
+  playerTag: Player
 --- !u!114 &-1237115616460795311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,10 +203,10 @@ MonoBehaviour:
   onActivate:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: c56a4a68088f9b4499e9b3ddf85cfbd2, type: 3}
-        m_TargetAssemblyTypeName: UnityEditor.MonoScript, UnityEditor.CoreModule
-        m_MethodName: set_name
-        m_Mode: 5
+      - m_Target: {fileID: -3184128567289974965}
+        m_TargetAssemblyTypeName: LockableDoor, Assembly-CSharp
+        m_MethodName: TryOpenWithKey
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
