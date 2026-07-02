@@ -255,30 +255,10 @@ PrefabInstance:
       propertyPath: health
       value: 
       objectReference: {fileID: 1608014298}
-    - target: {fileID: 1178060634286898072, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
-      propertyPath: damageImage
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 8656673077434773303, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1608014295}
-    - target: {fileID: 8656673077434773303, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
-      propertyPath: maxAlpha
-      value: 0.381
-      objectReference: {fileID: 0}
-    - target: {fileID: 8656673077434773303, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
-      propertyPath: farDistance
-      value: 5.61
-      objectReference: {fileID: 0}
-    - target: {fileID: 8656673077434773303, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
-      propertyPath: nearDistance
-      value: 2.74
-      objectReference: {fileID: 0}
-    - target: {fileID: 8656673077434773303, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
-      propertyPath: vignetteImage
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409498, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_Name
       value: MainCamera
@@ -326,7 +306,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8944336655422409498, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 238423204}
   m_SourcePrefab: {fileID: 100100000, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
 --- !u!1001 &106031152
 PrefabInstance:
@@ -711,10 +694,18 @@ PrefabInstance:
     - target: {fileID: -5347006657354106018, guid: baff78b0b09ce61499ffa460d38354da, type: 3}
       propertyPath: keyPickup
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 919132148193788764}
     - target: {fileID: -5347006657354106018, guid: baff78b0b09ce61499ffa460d38354da, type: 3}
       propertyPath: useRadius
       value: 37.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -5347006657354106018, guid: baff78b0b09ce61499ffa460d38354da, type: 3}
+      propertyPath: useRangeTrigger
+      value: 
+      objectReference: {fileID: 1913390453}
+    - target: {fileID: -2204753982057662489, guid: baff78b0b09ce61499ffa460d38354da, type: 3}
+      propertyPath: raycastSensor
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1477452452457132264, guid: baff78b0b09ce61499ffa460d38354da, type: 3}
       propertyPath: m_Name
@@ -764,7 +755,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -2204753982057662489, guid: baff78b0b09ce61499ffa460d38354da, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -774,6 +766,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8674750473419594388, guid: baff78b0b09ce61499ffa460d38354da, type: 3}
   m_PrefabInstance: {fileID: 228349707}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &238423196 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8944336655422409498, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
+  m_PrefabInstance: {fileID: 76148414}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &238423204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238423196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7f59b57e920c8d4d8b71599246ffc17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Ludocore.RaycastSensor
+  requiredTags: []
+  signals: []
+  detectedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  lostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  distance: 5.33
+  castRadius: 0.5
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  currentTarget: {fileID: 0}
 --- !u!1001 &266400728
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1069,26 +1092,14 @@ PrefabInstance:
     - target: {fileID: -1147505296042258038, guid: b0161caf09d6c0349ad9dc771892c43e, type: 3}
       propertyPath: keyPickup
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 919132148193788764}
     - target: {fileID: -1147505296042258038, guid: b0161caf09d6c0349ad9dc771892c43e, type: 3}
-      propertyPath: useRadius
-      value: 37.6
-      objectReference: {fileID: 0}
+      propertyPath: useRangeTrigger
+      value: 
+      objectReference: {fileID: 1228456125}
     - target: {fileID: 7371717953209777503, guid: b0161caf09d6c0349ad9dc771892c43e, type: 3}
       propertyPath: m_Name
       value: Door_Dbl_C_Grp
-      objectReference: {fileID: 0}
-    - target: {fileID: 7371717953209777503, guid: b0161caf09d6c0349ad9dc771892c43e, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8721388660025036415, guid: b0161caf09d6c0349ad9dc771892c43e, type: 3}
-      propertyPath: oneShot
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8721388660025036415, guid: b0161caf09d6c0349ad9dc771892c43e, type: 3}
-      propertyPath: onActivate.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8721388660025036415, guid: b0161caf09d6c0349ad9dc771892c43e, type: 3}
       propertyPath: onActivate.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1097,10 +1108,6 @@ PrefabInstance:
     - target: {fileID: 8721388660025036415, guid: b0161caf09d6c0349ad9dc771892c43e, type: 3}
       propertyPath: onActivate.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: TryOpenWithKey
-      objectReference: {fileID: 0}
-    - target: {fileID: 8721388660025036415, guid: b0161caf09d6c0349ad9dc771892c43e, type: 3}
-      propertyPath: onActivate.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: LockableDoor, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 9029359467289306013, guid: b0161caf09d6c0349ad9dc771892c43e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2292,17 +2299,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1845568557879636017, guid: 9c80fd2e993532548bf499390b16405a, type: 3}
   m_PrefabInstance: {fileID: 792539144}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &816541462 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5407970618577978043, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
-  m_PrefabInstance: {fileID: 1644632744}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7f59b57e920c8d4d8b71599246ffc17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Ludocore.RaycastSensor
 --- !u!1 &817494819
 GameObject:
   m_ObjectHideFlags: 0
@@ -3434,10 +3430,30 @@ PrefabInstance:
     - target: {fileID: -1854001434873555717, guid: 9823dcf4999f36441b08cf4ae971b303, type: 3}
       propertyPath: keyPickup
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 919132148193788764}
     - target: {fileID: -1854001434873555717, guid: 9823dcf4999f36441b08cf4ae971b303, type: 3}
       propertyPath: useRadius
       value: 37.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -1854001434873555717, guid: 9823dcf4999f36441b08cf4ae971b303, type: 3}
+      propertyPath: useRangeTrigger
+      value: 
+      objectReference: {fileID: 1913390453}
+    - target: {fileID: 1128407694733143565, guid: 9823dcf4999f36441b08cf4ae971b303, type: 3}
+      propertyPath: onActivate.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1128407694733143565, guid: 9823dcf4999f36441b08cf4ae971b303, type: 3}
+      propertyPath: onActivate.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1153272905}
+    - target: {fileID: 1128407694733143565, guid: 9823dcf4999f36441b08cf4ae971b303, type: 3}
+      propertyPath: onActivate.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TryOpenWithKey
+      objectReference: {fileID: 0}
+    - target: {fileID: 1128407694733143565, guid: 9823dcf4999f36441b08cf4ae971b303, type: 3}
+      propertyPath: onActivate.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LockableDoor, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4188562067375738724, guid: 9823dcf4999f36441b08cf4ae971b303, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3497,6 +3513,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4188562067375738724, guid: 9823dcf4999f36441b08cf4ae971b303, type: 3}
   m_PrefabInstance: {fileID: 1153272901}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1153272905 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -1854001434873555717, guid: 9823dcf4999f36441b08cf4ae971b303, type: 3}
+  m_PrefabInstance: {fileID: 1153272901}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c56a4a68088f9b4499e9b3ddf85cfbd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LockableDoor
 --- !u!1001 &1159615714
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3629,14 +3656,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1110015098}
     m_Modifications:
+    - target: {fileID: -5304789785027810729, guid: f75de2ad102a18345aa4a4d2a000abef, type: 3}
+      propertyPath: onActivate.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5304789785027810729, guid: f75de2ad102a18345aa4a4d2a000abef, type: 3}
+      propertyPath: onActivate.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1162294477}
+    - target: {fileID: -5304789785027810729, guid: f75de2ad102a18345aa4a4d2a000abef, type: 3}
+      propertyPath: onActivate.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TryOpenWithKey
+      objectReference: {fileID: 0}
+    - target: {fileID: -5304789785027810729, guid: f75de2ad102a18345aa4a4d2a000abef, type: 3}
+      propertyPath: onActivate.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LockableDoor, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 2270655676719494616, guid: f75de2ad102a18345aa4a4d2a000abef, type: 3}
       propertyPath: keyPickup
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 919132148193788764}
     - target: {fileID: 2270655676719494616, guid: f75de2ad102a18345aa4a4d2a000abef, type: 3}
       propertyPath: useRadius
       value: 37.6
       objectReference: {fileID: 0}
+    - target: {fileID: 2270655676719494616, guid: f75de2ad102a18345aa4a4d2a000abef, type: 3}
+      propertyPath: useRangeTrigger
+      value: 
+      objectReference: {fileID: 1162294479}
     - target: {fileID: 2704777757054990411, guid: f75de2ad102a18345aa4a4d2a000abef, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.17078996
@@ -3693,6 +3740,22 @@ PrefabInstance:
 --- !u!4 &1162294474 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2704777757054990411, guid: f75de2ad102a18345aa4a4d2a000abef, type: 3}
+  m_PrefabInstance: {fileID: 1162294473}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1162294477 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2270655676719494616, guid: f75de2ad102a18345aa4a4d2a000abef, type: 3}
+  m_PrefabInstance: {fileID: 1162294473}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c56a4a68088f9b4499e9b3ddf85cfbd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LockableDoor
+--- !u!65 &1162294479 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: -7833941416207316041, guid: f75de2ad102a18345aa4a4d2a000abef, type: 3}
   m_PrefabInstance: {fileID: 1162294473}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1200621218
@@ -3834,10 +3897,30 @@ PrefabInstance:
     - target: {fileID: -4564311624484277637, guid: 381052fe07f7bf34bbb02b25afe30c8e, type: 3}
       propertyPath: keyPickup
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 919132148193788764}
     - target: {fileID: -4564311624484277637, guid: 381052fe07f7bf34bbb02b25afe30c8e, type: 3}
       propertyPath: useRadius
       value: 37.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -4564311624484277637, guid: 381052fe07f7bf34bbb02b25afe30c8e, type: 3}
+      propertyPath: useRangeTrigger
+      value: 
+      objectReference: {fileID: 1913390453}
+    - target: {fileID: 2947693157508999430, guid: 381052fe07f7bf34bbb02b25afe30c8e, type: 3}
+      propertyPath: onActivate.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2947693157508999430, guid: 381052fe07f7bf34bbb02b25afe30c8e, type: 3}
+      propertyPath: onActivate.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1516786159}
+    - target: {fileID: 2947693157508999430, guid: 381052fe07f7bf34bbb02b25afe30c8e, type: 3}
+      propertyPath: onActivate.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TryOpenWithKey
+      objectReference: {fileID: 0}
+    - target: {fileID: 2947693157508999430, guid: 381052fe07f7bf34bbb02b25afe30c8e, type: 3}
+      propertyPath: onActivate.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LockableDoor, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4279030730084072890, guid: 381052fe07f7bf34bbb02b25afe30c8e, type: 3}
       propertyPath: m_Name
@@ -3896,6 +3979,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 8402520674563545878, guid: 381052fe07f7bf34bbb02b25afe30c8e, type: 3}
   m_PrefabInstance: {fileID: 1226518364}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1228456125 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 2904127720663849913, guid: b0161caf09d6c0349ad9dc771892c43e, type: 3}
+  m_PrefabInstance: {fileID: 378083781}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1228876503
 GameObject:
@@ -4213,7 +4301,7 @@ PrefabInstance:
     - target: {fileID: 7053984057783709756, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: raycastSensor
       value: 
-      objectReference: {fileID: 816541462}
+      objectReference: {fileID: 238423204}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4829,6 +4917,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7911773528324732693, guid: 7de5e1d243e9de3429bc415949761452, type: 3}
   m_PrefabInstance: {fileID: 1465164287}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1516786159 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -4564311624484277637, guid: 381052fe07f7bf34bbb02b25afe30c8e, type: 3}
+  m_PrefabInstance: {fileID: 1226518364}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c56a4a68088f9b4499e9b3ddf85cfbd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LockableDoor
 --- !u!1001 &1525158762
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5073,10 +5172,34 @@ PrefabInstance:
     - target: {fileID: -1854001434873555717, guid: 9823dcf4999f36441b08cf4ae971b303, type: 3}
       propertyPath: keyPickup
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 919132148193788764}
     - target: {fileID: -1854001434873555717, guid: 9823dcf4999f36441b08cf4ae971b303, type: 3}
       propertyPath: useRadius
       value: 37.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -1854001434873555717, guid: 9823dcf4999f36441b08cf4ae971b303, type: 3}
+      propertyPath: useRangeTrigger
+      value: 
+      objectReference: {fileID: 1547337258}
+    - target: {fileID: 1128407694733143565, guid: 9823dcf4999f36441b08cf4ae971b303, type: 3}
+      propertyPath: activatedGameEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: 83346619b3c39d744beb3f7e0c5731f4, type: 2}
+    - target: {fileID: 1128407694733143565, guid: 9823dcf4999f36441b08cf4ae971b303, type: 3}
+      propertyPath: onActivate.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1128407694733143565, guid: 9823dcf4999f36441b08cf4ae971b303, type: 3}
+      propertyPath: onActivate.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1547337255}
+    - target: {fileID: 1128407694733143565, guid: 9823dcf4999f36441b08cf4ae971b303, type: 3}
+      propertyPath: onActivate.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TryOpenWithKey
+      objectReference: {fileID: 0}
+    - target: {fileID: 1128407694733143565, guid: 9823dcf4999f36441b08cf4ae971b303, type: 3}
+      propertyPath: onActivate.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LockableDoor, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4188562067375738724, guid: 9823dcf4999f36441b08cf4ae971b303, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5134,6 +5257,22 @@ PrefabInstance:
 --- !u!4 &1547337252 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4188562067375738724, guid: 9823dcf4999f36441b08cf4ae971b303, type: 3}
+  m_PrefabInstance: {fileID: 1547337251}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1547337255 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -1854001434873555717, guid: 9823dcf4999f36441b08cf4ae971b303, type: 3}
+  m_PrefabInstance: {fileID: 1547337251}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c56a4a68088f9b4499e9b3ddf85cfbd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LockableDoor
+--- !u!65 &1547337258 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 5980502298489532085, guid: 9823dcf4999f36441b08cf4ae971b303, type: 3}
   m_PrefabInstance: {fileID: 1547337251}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1573406328
@@ -5506,10 +5645,6 @@ PrefabInstance:
       value: PlayerFollowCamera
       objectReference: {fileID: 0}
     - target: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.4800003
       objectReference: {fileID: 0}
@@ -5553,9 +5688,9 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 2017378830}
-    - target: {fileID: 2070925441746177913, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
-      propertyPath: m_Lens.FieldOfView
-      value: 16.21
+    - target: {fileID: 5407970618577978043, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6032,14 +6167,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2244998648234670962, guid: ba023aa6ee56c3045b4ae1d50cd07a04, type: 3}
+      propertyPath: onActivate.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2244998648234670962, guid: ba023aa6ee56c3045b4ae1d50cd07a04, type: 3}
+      propertyPath: onActivate.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1768582812}
+    - target: {fileID: 2244998648234670962, guid: ba023aa6ee56c3045b4ae1d50cd07a04, type: 3}
+      propertyPath: onActivate.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TryOpenWithKey
+      objectReference: {fileID: 0}
+    - target: {fileID: 2244998648234670962, guid: ba023aa6ee56c3045b4ae1d50cd07a04, type: 3}
+      propertyPath: onActivate.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LockableDoor, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 2958898748317705051, guid: ba023aa6ee56c3045b4ae1d50cd07a04, type: 3}
       propertyPath: keyPickup
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 919132148193788764}
     - target: {fileID: 2958898748317705051, guid: ba023aa6ee56c3045b4ae1d50cd07a04, type: 3}
       propertyPath: useRadius
       value: 37.6
       objectReference: {fileID: 0}
+    - target: {fileID: 2958898748317705051, guid: ba023aa6ee56c3045b4ae1d50cd07a04, type: 3}
+      propertyPath: useRangeTrigger
+      value: 
+      objectReference: {fileID: 1913390453}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6050,6 +6205,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2089521280321295408, guid: ba023aa6ee56c3045b4ae1d50cd07a04, type: 3}
   m_PrefabInstance: {fileID: 1768582808}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1768582812 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2958898748317705051, guid: ba023aa6ee56c3045b4ae1d50cd07a04, type: 3}
+  m_PrefabInstance: {fileID: 1768582808}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c56a4a68088f9b4499e9b3ddf85cfbd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LockableDoor
 --- !u!1001 &1831486377
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6236,6 +6402,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1845568557879636017, guid: 9c80fd2e993532548bf499390b16405a, type: 3}
   m_PrefabInstance: {fileID: 1896246435}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1913390453 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 1183702972000905112, guid: baff78b0b09ce61499ffa460d38354da, type: 3}
+  m_PrefabInstance: {fileID: 228349707}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1915438824
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6247,10 +6418,18 @@ PrefabInstance:
     - target: {fileID: -5347006657354106018, guid: baff78b0b09ce61499ffa460d38354da, type: 3}
       propertyPath: keyPickup
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 919132148193788764}
     - target: {fileID: -5347006657354106018, guid: baff78b0b09ce61499ffa460d38354da, type: 3}
       propertyPath: useRadius
       value: 37.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -5347006657354106018, guid: baff78b0b09ce61499ffa460d38354da, type: 3}
+      propertyPath: useRangeTrigger
+      value: 
+      objectReference: {fileID: 1913390453}
+    - target: {fileID: -2204753982057662489, guid: baff78b0b09ce61499ffa460d38354da, type: 3}
+      propertyPath: raycastSensor
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1477452452457132264, guid: baff78b0b09ce61499ffa460d38354da, type: 3}
       propertyPath: m_Name
@@ -7432,6 +7611,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1570095445923548983, guid: 4e2ed2b044746fb4ea71e5b7a335f0aa, type: 3}
   m_PrefabInstance: {fileID: 1326267140982370459}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &919132148193788764 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3419695803383877714, guid: 4e2ed2b044746fb4ea71e5b7a335f0aa, type: 3}
+  m_PrefabInstance: {fileID: 1326267140982370459}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132148193788763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab8019f696f497b488e0fff7b5dcbe5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPickupEffects
 --- !u!1001 &1326267140982370459
 PrefabInstance:
   m_ObjectHideFlags: 0
