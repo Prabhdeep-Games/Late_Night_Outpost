@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 2958898748317705051}
   - component: {fileID: 8282584642451198734}
   - component: {fileID: 2244998648234670962}
+  - component: {fileID: -7584410210251374915}
+  - component: {fileID: -887225409563698920}
   m_Layer: 0
   m_Name: Wndw_D_Grp
   m_TagString: Untagged
@@ -48,7 +50,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LockableDoor
   keyPickup: {fileID: 0}
-  useRadius: 2
 --- !u!114 &8282584642451198734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -100,6 +101,39 @@ MonoBehaviour:
         m_CallState: 2
   activatedGameEvent: {fileID: 0}
   consumed: 0
+--- !u!114 &-7584410210251374915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555392536951862611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82e30edf2eb75054093d1607a710223b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DoorDebugInteract
+--- !u!65 &-887225409563698920
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555392536951862611}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.77, y: 2.8115728, z: 1.61}
+  m_Center: {x: 0.18, y: 1.01, z: -0.08}
 --- !u!1 &2012839128595448070
 GameObject:
   m_ObjectHideFlags: 0

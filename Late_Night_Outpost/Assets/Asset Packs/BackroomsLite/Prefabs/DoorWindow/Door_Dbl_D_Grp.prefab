@@ -351,6 +351,8 @@ GameObject:
   - component: {fileID: 2270655676719494616}
   - component: {fileID: -6270011726817655123}
   - component: {fileID: -5304789785027810729}
+  - component: {fileID: 6694530144818990414}
+  - component: {fileID: -7833941416207316041}
   m_Layer: 0
   m_Name: Door_Dbl_D_Grp
   m_TagString: Untagged
@@ -390,7 +392,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LockableDoor
   keyPickup: {fileID: 0}
-  useRadius: 2
 --- !u!114 &-6270011726817655123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -442,6 +443,39 @@ MonoBehaviour:
         m_CallState: 2
   activatedGameEvent: {fileID: 0}
   consumed: 0
+--- !u!114 &6694530144818990414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3865026443349451147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82e30edf2eb75054093d1607a710223b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DoorDebugInteract
+--- !u!65 &-7833941416207316041
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3865026443349451147}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.77, y: 2.8115728, z: 1.61}
+  m_Center: {x: 0.18, y: 1.01, z: -0.08}
 --- !u!1 &8683221493694102356
 GameObject:
   m_ObjectHideFlags: 0
