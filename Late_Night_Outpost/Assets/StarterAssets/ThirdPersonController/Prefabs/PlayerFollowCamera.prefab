@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2070925441746177912}
   - component: {fileID: 2070925441746177913}
-  - component: {fileID: 5407970618577978043}
   m_Layer: 3
   m_Name: PlayerFollowCamera
   m_TagString: Player
@@ -87,32 +86,6 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   m_ComponentOwner: {fileID: 2070925442191277756}
---- !u!114 &5407970618577978043
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2070925441746177671}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7f59b57e920c8d4d8b71599246ffc17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Ludocore.RaycastSensor
-  requiredTags: []
-  signals: []
-  detectedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  lostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  distance: 5.33
-  castRadius: 0.5
-  layerMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  currentTarget: {fileID: 0}
 --- !u!1 &2070925442191277755
 GameObject:
   m_ObjectHideFlags: 0
