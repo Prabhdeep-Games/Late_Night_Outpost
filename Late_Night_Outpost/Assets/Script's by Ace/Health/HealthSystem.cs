@@ -96,11 +96,13 @@ namespace Ludocore
         private void Debug_Kill() => TakeDamage(currentHealth);
 
         //==================== PRIVATE =====================
-        private void Die()
-        {
-            isDead = true;
-            OnDied?.Invoke();
-            diedEvent?.Invoke();
-        }
-    }
+       private void Die()
+{
+    Debug.Log($"HealthSystem on {name}: Die() called. currentHealth = {currentHealth}");
+
+    isDead = true;
+    OnDied?.Invoke();
+    diedEvent?.Invoke();
+}
+}
 }
