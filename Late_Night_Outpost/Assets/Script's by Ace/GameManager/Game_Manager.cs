@@ -1,48 +1,20 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Ludocore
+public class SceneLoader : MonoBehaviour
 {
-    public class GameManager : MonoBehaviour
+    [Tooltip("Name of the scene to load when the button is clicked.")]
+    [SerializeField] private string sceneName;
+
+    // Called from the UI Button's OnClick.
+    public void LoadScene()
     {
-        [Header("State")]
-        [SerializeField] private bool isGameOver;
-
-        public bool IsGameOver => isGameOver;
-
-        public void ReportPlayerDied()
+        if (string.IsNullOrEmpty(sceneName))
         {
-            if (isGameOver) return;
-            Debug.Log("GAME OVER: Player died.");
-            HandleGameOver();
+            Debug.LogWarning("SceneLoader: sceneName is empty. Set it in the Inspector.");
+            return;
         }
 
-        public void ReportCoreDestroyed()
-        {
-            if (isGameOver) return;
-            Debug.Log("GAME OVER: Core destroyed.");
-            HandleGameOver();
-        }
-
-        private void HandleGameOver()
-        {
-            isGameOver = true;
-            Time.timeScale = 0f;
-            StartCoroutine(RestartAfterDelay(1.5f));
-        }
-
-        private System.Collections.IEnumerator RestartAfterDelay(float delay)
-        {
-            float elapsed = 0f;
-            while (elapsed < delay)
-            {
-                elapsed += Time.unscaledDeltaTime;
-                yield return null;
-            }
-
-            Time.timeScale = 1f;
-            var current = SceneManager.GetActiveScene();
-            SceneManager.LoadScene(current.buildIndex);
-        }
+        SceneManager.LoadScene(sceneName);
     }
 }

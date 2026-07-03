@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1220393116878929794}
   - component: {fileID: 4398322970465088607}
   m_Layer: 0
-  m_Name: Enemy Slash
+  m_Name: Slash_Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4961,7 +4961,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ludocore.DamageArea
   source: {fileID: 4398322970465088607}
-  damage: 50
+  damage: 20
   hitOncePerTarget: 1
   hitCount: 0
   hitEvent:

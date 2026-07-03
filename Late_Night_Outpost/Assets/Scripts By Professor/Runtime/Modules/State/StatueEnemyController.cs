@@ -132,8 +132,27 @@ namespace Ludocore
                     break;
 
                 case StatuePhase.BackToBase:
-                    if (entered) { Enter(backToBaseEvent); motor.MoveTo(_homePosition); }
-                    break;
+    if (entered)
+    {
+        Enter(backToBaseEvent);
+        motor.MoveTo(_homePosition);
+    }
+
+    // Face the current movement direction if there is one.
+    var agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+    if (agent != null && agent.hasPath && agent.path.corners.Length > 1)
+    {
+        // Next corner in the path.
+        Vector3 nextCorner = agent.path.corners[1];
+        FaceFlat(nextCorner);
+    }
+    else
+    {
+        // Fallback: face home position.
+        FaceFlat(_homePosition);
+    }
+
+    break;
 
                 case StatuePhase.Death:
                     if (entered) { Enter(DeathEvent); StopMovement(); }

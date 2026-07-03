@@ -31,13 +31,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7653723296717729274}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.6996272, z: 0, w: 0.7145081}
+  m_LocalRotation: {x: 0, y: 0.6996259, z: 0, w: 0.7145094}
   m_LocalPosition: {x: 7.254132, y: 2.023, z: 1.3624791}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 88.794, z: 0}
 --- !u!20 &8019709326999619850
 Camera:
   m_ObjectHideFlags: 0
@@ -188,8 +188,8 @@ MonoBehaviour:
   player: {fileID: 0}
   enemyRegistry: {fileID: 11400000, guid: 82f2f5b141cafec47815a7ba5fe9fd51, type: 2}
   vignetteImage: {fileID: 0}
-  nearDistance: 2.74
-  farDistance: 5.61
+  nearDistance: 2.14
+  farDistance: 3.52
   maxAlpha: 0.381
 --- !u!114 &1967906796280067099
 MonoBehaviour:
