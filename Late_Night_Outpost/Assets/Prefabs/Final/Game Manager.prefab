@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 489644555e776fe4fa3bc45f7a23f5eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ludocore.GameManager
-  sceneName: Level1
+  sceneName: Level_Select
 --- !u!114 &8446868583650130121
 MonoBehaviour:
   m_ObjectHideFlags: 0
