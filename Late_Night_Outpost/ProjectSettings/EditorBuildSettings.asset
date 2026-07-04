@@ -5,20 +5,26 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Prototype_Scenes/Combate_Core_Prototype.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
     path: Assets/Scenes/Final Scenes/Easy Levels/Level1.unity
     guid: e580d7b8166739b4f949bd1a465f5d1e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Final Scenes/Easy Levels/Level2.unity
     guid: 0e90dff28a0a06d418f6d686b37d90b6
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Final Scenes/Easy Levels/Level3.unity
     guid: 5be3cac70e234ec42b38bd543e62acee
   - enabled: 1
     path: Assets/Scenes/Final Scenes/MainMenu/Main_Menu.unity
     guid: d4024577398778f4cb3a1356a56abe60
+  - enabled: 1
+    path: Assets/Scenes/Final Scenes/MainMenu/Death_Screen.unity
+    guid: e1ecc533362f5954eb9d3cc74c05d0bf
+  - enabled: 1
+    path: Assets/Scenes/Final Scenes/MainMenu/Level_Select.unity
+    guid: d8a52c400586c76479ac3567a9e20c18
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

@@ -13,6 +13,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 namespace Ludocore
 {
@@ -98,11 +99,23 @@ namespace Ludocore
         //==================== PRIVATE =====================
        private void Die()
 {
-    Debug.Log($"HealthSystem on {name}: Die() called. currentHealth = {currentHealth}");
+    Debug.Log($"HealthSystem on {name}: Die() called at HP = {currentHealth}");
 
     isDead = true;
     OnDied?.Invoke();
     diedEvent?.Invoke();
+
+    // NEW: destroy this entity and load the next scene.
+    HandleDeathSceneChange();
+}
+
+private void HandleDeathSceneChange()
+{
+    // Destroy the player object (this HealthSystem is on the player).
+    Destroy(gameObject);
+
+    // Load a specific scene by name.
+    SceneManager.LoadScene("YourDeathSceneName");
 }
 }
 }
