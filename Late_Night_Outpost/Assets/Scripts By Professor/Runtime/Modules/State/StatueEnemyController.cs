@@ -65,6 +65,14 @@ namespace Ludocore
         [ReadOnly, SerializeField] private StatuePhase phase = StatuePhase.Idle;
 
         private Vector3 _homePosition;
+        private Quaternion _homeRotation;
+
+        public StatueEnemyController(Quaternion homeRotation)
+        {
+            _homeRotation = homeRotation;
+        }
+
+
         private Transform _target;
         private float _distance = Mathf.Infinity;
 
@@ -92,6 +100,7 @@ namespace Ludocore
         private void Awake()
         {
             _homePosition = transform.position;
+            _homeRotation = transform.rotation;
         }
 
         private void Start()
@@ -138,18 +147,13 @@ namespace Ludocore
         motor.MoveTo(_homePosition);
     }
 
-    // Face the current movement direction if there is one.
-    var agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
-    if (agent != null && agent.hasPath && agent.path.corners.Length > 1)
+    // While walking, face toward home.
+    FaceFlat(_homePosition);
+
+    // When close enough, snap to original home rotation.
+    if (IsHome())
     {
-        // Next corner in the path.
-        Vector3 nextCorner = agent.path.corners[1];
-        FaceFlat(nextCorner);
-    }
-    else
-    {
-        // Fallback: face home position.
-        FaceFlat(_homePosition);
+        transform.rotation = _homeRotation;
     }
 
     break;

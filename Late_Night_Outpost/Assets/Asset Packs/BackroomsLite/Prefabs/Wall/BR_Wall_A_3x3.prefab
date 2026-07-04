@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3666117603062505184}
   - component: {fileID: 4939653870699124638}
   - component: {fileID: 1433487708897326651}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BR_Wall_A_3x3
   m_TagString: Untagged
   m_Icon: {fileID: 0}

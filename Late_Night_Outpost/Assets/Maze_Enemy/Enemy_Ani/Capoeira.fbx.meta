@@ -3,7 +3,22 @@ guid: 8e64f58783ce6ed46912ead5cfe72c92
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: whiteclown_diffuse
+    second: {fileID: 2800000, guid: a7a62a1c144afba44b6d26fa80833b98, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: whiteclown_normal
+    second: {fileID: 2800000, guid: d411778cdba278c43b0fcd2729cda1ab, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: whiteclown_specular
+    second: {fileID: 2800000, guid: 7afead8ede78d5346a786314cb229b85, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

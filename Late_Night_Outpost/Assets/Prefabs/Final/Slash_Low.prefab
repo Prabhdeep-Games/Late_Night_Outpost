@@ -4961,7 +4961,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ludocore.DamageArea
   source: {fileID: 4398322970465088607}
-  damage: 239.2
+  damage: 20
   hitOncePerTarget: 1
   hitCount: 0
   hitEvent:

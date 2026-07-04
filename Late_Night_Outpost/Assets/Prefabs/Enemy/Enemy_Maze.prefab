@@ -45,7 +45,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: a3d1726711568ca4487ffbe14dda1a0e, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.602
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -389,11 +389,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dbf183896915524681912f36ac8d29b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ludocore.Meter
-  fillRate: 0.1
-  drainRate: 0.2
-  drainDelay: 1
-  lowThreshold: 0.05
-  highThreshold: 0.1
+  fillRate: 0.5
+  drainRate: 0.05
+  drainDelay: 0.38
+  lowThreshold: 0.001
+  highThreshold: 1
   initialValue: 0
   autoFill: 0
   value: 0
@@ -420,8 +420,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 8e64f58783ce6ed46912ead5cfe72c92, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.94343
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8e64f58783ce6ed46912ead5cfe72c92, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.94343
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8e64f58783ce6ed46912ead5cfe72c92, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.94343
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8e64f58783ce6ed46912ead5cfe72c92, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.891
+      value: 9.47
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8e64f58783ce6ed46912ead5cfe72c92, type: 3}
       propertyPath: m_LocalPosition.y
@@ -429,11 +441,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8e64f58783ce6ed46912ead5cfe72c92, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.094
+      value: 16.21
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8e64f58783ce6ed46912ead5cfe72c92, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7083687
+      value: 0.045638952
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8e64f58783ce6ed46912ead5cfe72c92, type: 3}
       propertyPath: m_LocalRotation.x
@@ -441,7 +453,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8e64f58783ce6ed46912ead5cfe72c92, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7058426
+      value: -0.99895805
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8e64f58783ce6ed46912ead5cfe72c92, type: 3}
       propertyPath: m_LocalRotation.z
@@ -453,7 +465,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8e64f58783ce6ed46912ead5cfe72c92, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 89.795
+      value: -174.768
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8e64f58783ce6ed46912ead5cfe72c92, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -467,6 +479,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -19.518
       objectReference: {fileID: 0}
+    - target: {fileID: -4277760611513043768, guid: 8e64f58783ce6ed46912ead5cfe72c92, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 9fcd0fcfe1a72f4469da773567404344, type: 2}
     - target: {fileID: 919132149155446097, guid: 8e64f58783ce6ed46912ead5cfe72c92, type: 3}
       propertyPath: m_Name
       value: Enemy_Maze
@@ -687,7 +703,7 @@ MonoBehaviour:
   chase: {fileID: 6018735653330136967}
   wander: {fileID: 1654384761531391827}
   attackSpawner: {fileID: 5814074051506066228}
-  chaseThreshold: 0.5
+  chaseThreshold: 0.219
   attackRange: 2
   baseArrivalDistance: 0.5
   phase: 0
