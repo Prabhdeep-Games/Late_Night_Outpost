@@ -253,9 +253,9 @@
                     "name": "",
                     "id": "0c1f5b0d-7e5f-49ae-9f7a-1a3c8b260909",
                     "path": "<Keyboard>/escape",
-                    "interactions": "Tap",
+                    "interactions": "",
                     "processors": "",
-                    "groups": ";KeyboardMouse;Gamepad",
+                    "groups": ";KeyboardMouse",
                     "action": "Pause",
                     "isComposite": false,
                     "isPartOfComposite": false
