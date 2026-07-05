@@ -9976,6 +9976,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door_Dbl_A_Grp
       objectReference: {fileID: 0}
+    - target: {fileID: 9189278550627971777, guid: 9823dcf4999f36441b08cf4ae971b303, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14798,6 +14802,10 @@ PrefabInstance:
     - target: {fileID: 4857429045279965887, guid: bc0b2b1b54d692a43b87d4aff85daad8, type: 3}
       propertyPath: m_Name
       value: BR_Wall_A_3x3_Door_B_Alt
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857429045279965887, guid: bc0b2b1b54d692a43b87d4aff85daad8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8332989171745431817, guid: bc0b2b1b54d692a43b87d4aff85daad8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -24515,6 +24523,10 @@ PrefabInstance:
     - target: {fileID: 9189278550627971777, guid: 9823dcf4999f36441b08cf4ae971b303, type: 3}
       propertyPath: m_Name
       value: Door_Dbl_A_Grp
+      objectReference: {fileID: 0}
+    - target: {fileID: 9189278550627971777, guid: 9823dcf4999f36441b08cf4ae971b303, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

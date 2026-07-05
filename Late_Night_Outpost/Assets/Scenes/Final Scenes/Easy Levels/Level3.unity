@@ -379,6 +379,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1654384761531391827, guid: 27a3f0a1db4e03e4a979af6f90387d78, type: 3}
+      propertyPath: radius
+      value: 12.23
+      objectReference: {fileID: 0}
     - target: {fileID: 7288193842806353573, guid: 27a3f0a1db4e03e4a979af6f90387d78, type: 3}
       propertyPath: m_LocalPosition.x
       value: 25.23
@@ -24470,6 +24474,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7901463327303089432, guid: 54d0a0d6561c1674f9535a2f4584e748, type: 3}
+      propertyPath: sceneToLoad
+      value: Level4
+      objectReference: {fileID: 0}
     - target: {fileID: 8701843325164766390, guid: 54d0a0d6561c1674f9535a2f4584e748, type: 3}
       propertyPath: m_Name
       value: Final_Wall
@@ -25482,6 +25490,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1654384761531391827, guid: 27a3f0a1db4e03e4a979af6f90387d78, type: 3}
+      propertyPath: radius
+      value: 11.35
+      objectReference: {fileID: 0}
     - target: {fileID: 7288193842806353573, guid: 27a3f0a1db4e03e4a979af6f90387d78, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.021
@@ -30318,6 +30330,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1409589133}
+    - target: {fileID: 1269169302230628676, guid: b25ce579565febf4688822868a24f06a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2878530897472617557, guid: b25ce579565febf4688822868a24f06a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -30334,6 +30350,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1409589130}
+    - target: {fileID: 4339295561496315640, guid: b25ce579565febf4688822868a24f06a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5937148200746322848, guid: b25ce579565febf4688822868a24f06a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
