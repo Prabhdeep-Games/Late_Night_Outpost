@@ -188,8 +188,8 @@ MonoBehaviour:
   player: {fileID: 0}
   enemyRegistry: {fileID: 11400000, guid: 82f2f5b141cafec47815a7ba5fe9fd51, type: 2}
   vignetteImage: {fileID: 0}
-  nearDistance: 3.02
-  farDistance: 5.38
+  nearDistance: 2.74
+  farDistance: 3.98
   maxAlpha: 0.307
 --- !u!114 &1967906796280067099
 MonoBehaviour:
