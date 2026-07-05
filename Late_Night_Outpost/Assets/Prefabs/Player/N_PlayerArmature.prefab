@@ -533,6 +533,7 @@ GameObject:
   - component: {fileID: 6981843295179167328}
   - component: {fileID: 6792083372145620976}
   - component: {fileID: 747364592052388062}
+  - component: {fileID: 3693818000744548}
   m_Layer: 3
   m_Name: N_PlayerArmature
   m_TagString: Player
@@ -922,6 +923,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &3693818000744548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1970708418649356401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e6bd84a60ea63a41892fcc049ba57d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Ludocore.HealthBarView
+  health: {fileID: 4383521268406242661}
+  slider: {fileID: 0}
+  barRoot: {fileID: 0}
+  hideWhenFull: 0
+  hideOnDeath: 0
 --- !u!1 &1978982549366671138
 GameObject:
   m_ObjectHideFlags: 0
