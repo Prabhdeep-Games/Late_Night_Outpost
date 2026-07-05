@@ -340,50 +340,34 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1409589133}
-    - target: {fileID: 415078799624783093, guid: b25ce579565febf4688822868a24f06a, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: QuitGame
+    - target: {fileID: 719844169476938831, guid: b25ce579565febf4688822868a24f06a, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1269169302230628676, guid: b25ce579565febf4688822868a24f06a, type: 3}
-      propertyPath: m_IsActive
+    - target: {fileID: 719844169476938831, guid: b25ce579565febf4688822868a24f06a, type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3332399133915468902, guid: b25ce579565febf4688822868a24f06a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1409589135}
-    - target: {fileID: 3332399133915468902, guid: b25ce579565febf4688822868a24f06a, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: RestartLevel
-      objectReference: {fileID: 0}
     - target: {fileID: 3723242746808447021, guid: b25ce579565febf4688822868a24f06a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1409589130}
-    - target: {fileID: 3723242746808447021, guid: b25ce579565febf4688822868a24f06a, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadScene
-      objectReference: {fileID: 0}
-    - target: {fileID: 4339295561496315640, guid: b25ce579565febf4688822868a24f06a, type: 3}
+    - target: {fileID: 5022073385450038957, guid: b25ce579565febf4688822868a24f06a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5937148200746322848, guid: b25ce579565febf4688822868a24f06a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1409589132}
-    - target: {fileID: 5937148200746322848, guid: b25ce579565febf4688822868a24f06a, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadScene
-      objectReference: {fileID: 0}
     - target: {fileID: 6418585957128508183, guid: b25ce579565febf4688822868a24f06a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1409589135}
-    - target: {fileID: 6418585957128508183, guid: b25ce579565febf4688822868a24f06a, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ResumeLevel
-      objectReference: {fileID: 0}
     - target: {fileID: 6559302114385909506, guid: b25ce579565febf4688822868a24f06a, type: 3}
       propertyPath: m_Name
       value: UI_Manager (1)
@@ -593,6 +577,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3693818000744548, guid: ef90cbe0b66a56a4bb7be06ef72ce6e5, type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1308098443}
+    - target: {fileID: 3693818000744548, guid: ef90cbe0b66a56a4bb7be06ef72ce6e5, type: 3}
+      propertyPath: barRoot
+      value: 
+      objectReference: {fileID: 1420770431}
     - target: {fileID: 1031468951591067795, guid: ef90cbe0b66a56a4bb7be06ef72ce6e5, type: 3}
       propertyPath: m_Camera
       value: 
@@ -1689,6 +1681,7 @@ GameObject:
   m_Component:
   - component: {fileID: 615434064}
   - component: {fileID: 615434065}
+  - component: {fileID: 615434066}
   m_Layer: 0
   m_Name: BGMusic
   m_TagString: Untagged
@@ -1723,7 +1716,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 7b44fe0746398ef4d901a503713c0c45, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1808,6 +1801,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &615434066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615434063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0212d5d6941906841ac793c6e2bf9392, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MusicManager
+  musicSource: {fileID: 615434065}
+  musicScenes:
+  - Level1
+  - Level2
+  - Level3
+  - Level4
+  - Level5
 --- !u!4 &615855018 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1845568557879636017, guid: 9c80fd2e993532548bf499390b16405a, type: 3}
@@ -4130,6 +4142,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4146698100257321701, guid: 3857728036168af4487fc614c42e6467, type: 3}
   m_PrefabInstance: {fileID: 1886143249}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1308098443 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3618397477519647595, guid: b25ce579565febf4688822868a24f06a, type: 3}
+  m_PrefabInstance: {fileID: 38851151}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Slider
 --- !u!4 &1326229908 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7911773528324732693, guid: 7de5e1d243e9de3429bc415949761452, type: 3}
@@ -4329,6 +4352,11 @@ MonoBehaviour:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4146698100257321701, guid: 3857728036168af4487fc614c42e6467, type: 3}
   m_PrefabInstance: {fileID: 1749790138}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1420770431 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8603229424705993224, guid: b25ce579565febf4688822868a24f06a, type: 3}
+  m_PrefabInstance: {fileID: 38851151}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1423797137
 GameObject:
@@ -6028,34 +6056,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3816131443815471834, guid: 27a3f0a1db4e03e4a979af6f90387d78, type: 3}
-      propertyPath: lookAroundEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3816131443815471834, guid: 27a3f0a1db4e03e4a979af6f90387d78, type: 3}
-      propertyPath: lookAroundEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3816131443815471834, guid: 27a3f0a1db4e03e4a979af6f90387d78, type: 3}
-      propertyPath: lookAroundEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1923611198}
-    - target: {fileID: 3816131443815471834, guid: 27a3f0a1db4e03e4a979af6f90387d78, type: 3}
-      propertyPath: lookAroundEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3816131443815471834, guid: 27a3f0a1db4e03e4a979af6f90387d78, type: 3}
-      propertyPath: lookAroundEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: StartWander
-      objectReference: {fileID: 0}
-    - target: {fileID: 3816131443815471834, guid: 27a3f0a1db4e03e4a979af6f90387d78, type: 3}
-      propertyPath: lookAroundEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Ludocore.NavMeshWander, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 3816131443815471834, guid: 27a3f0a1db4e03e4a979af6f90387d78, type: 3}
-      propertyPath: lookAroundEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 7288193842806353573, guid: 27a3f0a1db4e03e4a979af6f90387d78, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.25
@@ -6099,10 +6099,6 @@ PrefabInstance:
     - target: {fileID: 7957593376949875743, guid: 27a3f0a1db4e03e4a979af6f90387d78, type: 3}
       propertyPath: m_Name
       value: Enemy_Maze
-      objectReference: {fileID: 0}
-    - target: {fileID: 7957593376949875743, guid: 27a3f0a1db4e03e4a979af6f90387d78, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6443,17 +6439,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c80fd2e993532548bf499390b16405a, type: 3}
---- !u!114 &1923611198 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1654384761531391827, guid: 27a3f0a1db4e03e4a979af6f90387d78, type: 3}
-  m_PrefabInstance: {fileID: 1837706542}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fb30c0627b8a6e488de0bb2103833c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Ludocore.NavMeshWander
 --- !u!1001 &1948366255
 PrefabInstance:
   m_ObjectHideFlags: 0
