@@ -5,13 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Final Scenes/UI Scenes/Main_Menu.unity
     guid: d4024577398778f4cb3a1356a56abe60
-  - enabled: 1
-    path: Assets/Scenes/Final Scenes/UI Scenes/Death_Screen.unity
-    guid: e1ecc533362f5954eb9d3cc74c05d0bf
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Final Scenes/UI Scenes/Level_Select.unity
     guid: d8a52c400586c76479ac3567a9e20c18
   - enabled: 1
@@ -26,6 +23,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Final Scenes/Easy Levels/Level4.unity
     guid: b844f35e280e7c24c83a11d71b3604c4
+  - enabled: 1
+    path: Assets/Scenes/Final Scenes/Easy Levels/Level5.unity
+    guid: 7a2a669fc2ac2a94a84a681c4ccc7f0f
+  - enabled: 1
+    path: Assets/Scenes/Final Scenes/UI Scenes/Win_Scene.unity
+    guid: 4c14eb306dac8fa4986c3af1281128d7
+  - enabled: 1
+    path: Assets/Scenes/Final Scenes/UI Scenes/Death_Screen.unity
+    guid: e1ecc533362f5954eb9d3cc74c05d0bf
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 08c1fab66e06fb34d94859044c560bfd, type: 3}

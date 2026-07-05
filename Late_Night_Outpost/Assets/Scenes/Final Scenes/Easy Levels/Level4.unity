@@ -8098,7 +8098,6 @@ GameObject:
   m_Component:
   - component: {fileID: 615434064}
   - component: {fileID: 615434065}
-  - component: {fileID: 615434066}
   m_Layer: 0
   m_Name: BGMusic
   m_TagString: Untagged
@@ -8218,18 +8217,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &615434066
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 615434063}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c83fe164d5b592242bfb9c7344d356ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UICursorController
 --- !u!1001 &617587065
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28655,7 +28642,7 @@ PrefabInstance:
       objectReference: {fileID: 1409589133}
     - target: {fileID: 1269169302230628676, guid: b25ce579565febf4688822868a24f06a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2878530897472617557, guid: b25ce579565febf4688822868a24f06a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -28680,7 +28667,11 @@ PrefabInstance:
     - target: {fileID: 5937148200746322848, guid: b25ce579565febf4688822868a24f06a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1568066027}
+      objectReference: {fileID: 1409589132}
+    - target: {fileID: 5937148200746322848, guid: b25ce579565febf4688822868a24f06a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadScene
+      objectReference: {fileID: 0}
     - target: {fileID: 6418585957128508183, guid: b25ce579565febf4688822868a24f06a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
