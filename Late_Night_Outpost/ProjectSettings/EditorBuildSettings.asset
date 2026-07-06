@@ -32,6 +32,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Final Scenes/UI Scenes/Death_Screen.unity
     guid: e1ecc533362f5954eb9d3cc74c05d0bf
+  - enabled: 1
+    path: Assets/Scenes/Final Scenes/UI Scenes/Controls.unity
+    guid: deee9312d0a33b24faf63bb657c736fc
+  - enabled: 1
+    path: Assets/Scenes/Final Scenes/UI Scenes/Credits.unity
+    guid: fbb36c8429215df4495cbda6709841db
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 08c1fab66e06fb34d94859044c560bfd, type: 3}
