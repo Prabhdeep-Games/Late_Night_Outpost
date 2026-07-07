@@ -1,15 +1,15 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GroupMusicA : MonoBehaviour
+public class GroupMusicB : MonoBehaviour
 {
-    public static GroupMusicA Instance;
+    public static GroupMusicB Instance;
 
     [Header("Audio")]
     [SerializeField] private AudioSource musicSource;
 
     [Header("Scenes using this track")]
-    [SerializeField] private string[] musicScenes; // e.g. Level1, Level2, Level3, Level4
+    [SerializeField] private string[] musicScenes; // e.g. Level5, Level6, Level7...
 
     private void Awake()
     {
