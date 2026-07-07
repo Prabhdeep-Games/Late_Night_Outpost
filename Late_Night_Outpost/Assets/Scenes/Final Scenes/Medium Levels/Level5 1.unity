@@ -5568,6 +5568,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BR_Wall_A_3x3_Hole
       objectReference: {fileID: 0}
+    - target: {fileID: 8469252157616628830, guid: 9295a9ba40e836144a5bab2db9eb10de, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7958,6 +7962,10 @@ PrefabInstance:
     - target: {fileID: 8469252157616628830, guid: 9295a9ba40e836144a5bab2db9eb10de, type: 3}
       propertyPath: m_Name
       value: BR_Wall_A_3x3_Hole
+      objectReference: {fileID: 0}
+    - target: {fileID: 8469252157616628830, guid: 9295a9ba40e836144a5bab2db9eb10de, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13914,6 +13922,10 @@ PrefabInstance:
     - target: {fileID: 8469252157616628830, guid: 9295a9ba40e836144a5bab2db9eb10de, type: 3}
       propertyPath: m_Name
       value: BR_Wall_A_3x3_Hole
+      objectReference: {fileID: 0}
+    - target: {fileID: 8469252157616628830, guid: 9295a9ba40e836144a5bab2db9eb10de, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24260,10 +24272,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1753033771}
   - {fileID: 611654213}
   - {fileID: 1343499263}
   - {fileID: 1514534162}
-  - {fileID: 1753033771}
   - {fileID: 282986031}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -26904,13 +26916,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7901463327303089432, guid: 54d0a0d6561c1674f9535a2f4584e748, type: 3}
-      propertyPath: sceneToLoad
-      value: Win_Scene
-      objectReference: {fileID: 0}
     - target: {fileID: 5776985689550648310, guid: 9c80fd2e993532548bf499390b16405a, type: 3}
       propertyPath: m_Name
       value: BR_Wall_A_3x3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7901463327303089432, guid: 54d0a0d6561c1674f9535a2f4584e748, type: 3}
+      propertyPath: sceneToLoad
+      value: Win_Scene
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

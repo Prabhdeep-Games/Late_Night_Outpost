@@ -27,6 +27,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Final Scenes/Easy Levels/Level5.unity
     guid: 7a2a669fc2ac2a94a84a681c4ccc7f0f
   - enabled: 1
+    path: Assets/Scenes/Final Scenes/Medium Levels/Level5 1.unity
+    guid: 038ff64ecc58fcd4785b8525fecf68d1
+  - enabled: 1
     path: Assets/Scenes/Final Scenes/UI Scenes/Win_Scene.unity
     guid: 4c14eb306dac8fa4986c3af1281128d7
   - enabled: 1
