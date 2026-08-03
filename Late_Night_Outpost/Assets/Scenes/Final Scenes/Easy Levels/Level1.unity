@@ -356,6 +356,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1409589130}
+    - target: {fileID: 5022073385450038957, guid: b25ce579565febf4688822868a24f06a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5937148200746322848, guid: b25ce579565febf4688822868a24f06a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2837,6 +2841,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4881091098073361404, guid: 3728313d3efebeb40a4eb455f56f5f64, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3271,6 +3279,10 @@ PrefabInstance:
     - target: {fileID: 7653723296717729274, guid: 5624abaeb20a5d249aaa12777f22b9fd, type: 3}
       propertyPath: m_Name
       value: MainCamera
+      objectReference: {fileID: 0}
+    - target: {fileID: 7653723296717729274, guid: 5624abaeb20a5d249aaa12777f22b9fd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
